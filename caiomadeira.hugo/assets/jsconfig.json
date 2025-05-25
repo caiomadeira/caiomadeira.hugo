@@ -1,0 +1,10 @@
+{
+ "compilerOptions": {
+  "baseUrl": ".",
+  "paths": {
+   "*": [
+    "../themes/caojimmy-theme-hugo/assets/*"
+   ]
+  }
+ }
+}

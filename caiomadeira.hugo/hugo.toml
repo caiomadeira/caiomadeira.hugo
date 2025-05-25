@@ -1,3 +1,34 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://caiomadeira.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Caio Madeira'
+theme = 'caojimmy-theme-hugo'
+
+# Params
+enableEmoji = true
+enableRobotsTXT = true
+enableMissingTranslationPlaceholders = true
+
+[params]
+title = "Caio Madeira"
+date = "2019-10-03"
+description = "Opa"
+email = "caiomadeira.dev@gmail.com"
+keywords = "event, google, programming, go, golang, developers, web, cloud"
+copyright = "GopheRio Meetup"
+cfpUrl = "https://forms.gle/YhqM93oHFXDLn2K48"
+subscriptionUrl = "http://meetup.com/gopherio"
+appleTouchIcon = "/apple-touch-icon.png"
+favicon32 = "/favicon-32x32.png"
+favicon16 = "/favicon-16x16.png"
+manifest = "/manifest.json"
+safariPinnedTab = "/safari-pinned-tab.svg"
+themeColor = "#673ab7"
+
+
+[menu]
+[[menu.main]]
+identifier = "portifolio"
+name = "Portifolio"
+url = "http://caiomadeira.github.io/portifolio"
+weight = 200
+external = true
