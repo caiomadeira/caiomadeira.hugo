@@ -1,6 +1,3 @@
-[submodule "caiomadeira.hugo/themes/caojimmy-theme-hugo"]
-	path = caiomadeira.hugo/themes/caojimmy-theme-hugo
-	url = https://github.com/CaiJimmy/hugo-theme-stack.git
 [submodule "caiomadeira.hugo/caiomadeira.github.io"]
 	path = caiomadeira.hugo/caiomadeira.github.io
 	url = git@github.com:caiomadeira/caiomadeira.github.io.git
