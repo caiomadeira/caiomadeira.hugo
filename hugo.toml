@@ -37,12 +37,12 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
     weight = 30
 
 [Languages.en-gb.params]
-  sitename = "Awesome hugo blog"
+  sitename = "Caio Madeira"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
-  description = "Minimal Hugo blog theme with light and dark mode support"
+  description = ""
   mainSections = ['posts']
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
@@ -60,17 +60,35 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
   # By default (or if nothing is specified), summary is used.
 
 [Languages.en-gb.params.author]
-  avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
+  avatar = "avatar.png" # put the file in assets folder; also ensure that image has same height and width
 
-  name = "Sidharth R"  # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
-  intro = "Awesome hugo blog"
-  description = "A fast, minimalistic Hugo theme with light and dark mode support, for running a personal site or blog."
+  name = "caio madeira"  # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
+  intro = "caio madeira"
+  description = "Computer Science | Parallel Applications, Streaming and IA"
 
 # Allow to override webmanifest options
 [Languages.en-gb.params.webmanifest]
-  name = "sitename" # will use "params.sitename" or "title" by default
-  short_name = "sitename" # same as name
+  name = "caiomadeira" # will use "params.sitename" or "title" by default
+  short_name = "caiomadeira" # same as name
   start_url = "/" # will use homepage url by default
   theme_color = "#434648" # default is "#434648" (base color of text). Also will override html `<meta name="theme-color" />`
   background_color = "#fff" # by default depend on "params.defaultColor" for "light" or "auto" will be set to "#fff" for dark will be "#131418" (color of dark mode background)
   display = "standalone"
+
+  ###################################################################
+
+# Allow to override `browserconfig.xml` params (configuration for windows embedded browsers)
+[params.browserconfig]
+  TileColor = "#2d89ef" # default windows 10 blue tile color
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/caiomadeira"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/caiomadeiradev"
+
+[[params.socialIcons]]
+name = "Rss"
+url = "/index.xml"
