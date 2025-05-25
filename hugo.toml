@@ -1,0 +1,4 @@
+baseURL = 'https://caiomadeira.github.io/'
+languageCode = 'en-us'
+title = 'Caio Madeira'
+theme = 'hugo-blog-awesome'

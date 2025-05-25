@@ -5,3 +5,10 @@
 	path = caiomadeira.hugo/caiomadeira.github.io
 	url = git@github.com:caiomadeira/caiomadeira.github.io.git
 	branch = main
+[submodule "public"]
+	path = public
+	url = git@github.com:caiomadeira/caiomadeira.github.io.git
+	branch = main
+[submodule "themes/hugo-blog-awesome"]
+	path = themes/hugo-blog-awesome
+	url = https://github.com/hugo-sid/hugo-blog-awesome.git
