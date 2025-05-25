@@ -1,4 +1,5 @@
 echo "deploying"
+hugo
 cd public
 git add .
 git commit -m "deploy"
