@@ -14,23 +14,23 @@ That’s enough for context, let’s make a deep dive into some initial problems
 You can find this problem [here](https://crackmes.one/crackme/5c2acb8933c5d46a3882b8d4).  
 The first problem that I got involved with was _‘The Yuri’s Simple Keygen’_ . When I entered this segment of computation (2 weeks ago), this problem was most recommended for everyone. The problem itself is simple. The program is a binary which contains a program written in C and when you run, he asks for a serial key. Obviously, guessing the serial only with some brute force method is out of question here.
 
-![crackme1](img/crackme1.png)
+![crackme1](/img/crackme1.png)
 
 The binary is the only information here. We need another approach to make this flow right. And this approach consists in decompiling this binary. We need some kind of disassembler. Of course, we don’t make a disassembler from scratch. In fact, we will use one of the most powerful tools in this area: [**Ghidra**](https://github.com/NationalSecurityAgency/ghidra) (I do not intend to provide a summary of the tool).
 
 Once we configure the project and open the binary in Ghidra, we can analyse the source code.
 
-![crackme2](img/crackme2.png)
+![crackme2](/img/crackme2.png)
 
 Well, maybe part of it.  
 In the Listing view, we can see a disassembled code and the associated data of the program. Machine instructions brought directly into the assembly is what we will see here. This view is our north.  
 Looking closer, we can see a function declaration in the middle of all these instructions. It’s a well-known main function of C/C++ programs. Well, that’s a start point.
 
-![crackme3](img/crackme3.png)
+![crackme3](/img/crackme3.png)
 
 By clicking on this piece of function, we can see an attempt to “translate” it in the Decompile window. The decompile window is, without doubt, one of the most powerful tool in this program. And of course, is a complement of Listing Window, because the assembly code is converted for a more “high-level” presentation. But it's not always that readable and it is up to us to figure out what piece of code can be.
 
-![crackme4](img/crackme4.png)
+![crackme4](/img/crackme4.png)
 
 You probably get something like this. And if you know the C basics, it's easy to decipher this function. So let’s do this.  
 ```
@@ -208,7 +208,7 @@ The program asks for a serial and the serial is a string which conforms with som
 
 The core of the challenge is to discover the rule to which the serial is subject in and in this case the loop iterates through pairs of characters and do a subtraction with the current by the next. If you don’t remember, a char type value can be represented as an integer, according to the ASCII Table.
 
-![crackme5](img/crackme5.png)
+![crackme5](/img/crackme5.png)
 ASCII Table
 
 Based in that, i use this string as a valid serial:  
