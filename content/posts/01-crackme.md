@@ -208,7 +208,8 @@ The program asks for a serial and the serial is a string which conforms with som
 
 The core of the challenge is to discover the rule to which the serial is subject in and in this case the loop iterates through pairs of characters and do a subtraction with the current by the next. If you don’t remember, a char type value can be represented as an integer, according to the ASCII Table.
 
-![crackme5](/img/crackme5.png)
+![crackme5](/img/crackme5.png)   
+
 ASCII Table
 
 Based in that, i use this string as a valid serial:  
