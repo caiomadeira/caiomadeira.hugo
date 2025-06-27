@@ -1,11 +1,11 @@
 +++
-title = 'From newbie to newbie: a modest start in software reverse engineering'
+title = 'Solving a simple crackmes.one challenge'
 date = 2025-06-27T19:23:03-03:00
 draft = false
 +++
 
 Recently, I started on with some crackmes.one challenges to finally make a deep dive into reverse engineering world’s. But, the beginning is being completely informal, uncommitted and informal. Otherwise, we need to start with something, right?  
-The [**crackmes.one**](http://crackmes.one) is a place where people can upload some challenges (programs) and other peoples can make strategies to “hack” the software. Well, you can visit this place on your own.  
+The [**crackmes.one**](http://crackmes.one) is a place where people cand upload some challenges (programs) and other peoples can make strategies to “hack” the software. Well, you can visit this place on your own.  
 That’s enough for context, let’s make a deep dive into some initial problems.
 
 --- 
