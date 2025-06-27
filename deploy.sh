@@ -6,5 +6,5 @@ git commit -m "deploy"
 git push origin
 cd ..
 git add .
-git commit -m "changes in project hugo"
+git commit -m "new post"
 git push origin
