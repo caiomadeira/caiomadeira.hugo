@@ -31,9 +31,9 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
     url = '/posts/'
     weight = 20
   [[Languages.en-gb.menu.main]]
-    pageRef="portifolio"
-    name = 'Portifolio'
-    url = '/portifolio/'
+    pageRef="apps"
+    name = 'Apps'
+    url = '/apps/'
     weight = 30
 
 [Languages.en-gb.params]
